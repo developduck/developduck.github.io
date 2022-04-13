@@ -8,6 +8,11 @@
           {% if item.projects %}
             {% for project in item.projects %}
               {% include elements/btn-project-link.html link=project.link text=project.title %}
+              {% if project.skills %}
+                {% for skill in project.skills %}
+                  {% include elements/btn-skill-link.html link=skill.link text=skill.title %}
+                {% endfor %}
+              {% endif %}
             {% endfor %}
           {% endif %}
           <p>{{ item.description }}</p>
