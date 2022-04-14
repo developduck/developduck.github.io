@@ -11,6 +11,11 @@
         {{ project_name }}
       </h5>
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+      <p id="{{ project_id }}-skills" class="card-text">
+        {%- for skill in project_skills -%}
+        <span class="badge badge-pill text-success border border-success ml-1">{{ skill }}</span>
+        {%- endfor -%}
+      </p>
       <p id="{{ project_id }}-tools" class="card-text">
         {%- for tool in project_tools -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
