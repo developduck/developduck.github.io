@@ -7,12 +7,15 @@
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
           {% if item.projects %}
             {% for project in item.projects %}
+            <p>
               {% include elements/btn-project-link.html link=project.link text=project.name %}
               {% if project.skills %}
+              <br>
                 {% for skill in project.skills %}
                   {% include elements/btn-skill-link.html link=skill.link text=skill.name %}
                 {% endfor %}
               {% endif %}
+            </p>
             {% endfor %}
           {% endif %}
           <p>{{ item.description }}</p>
