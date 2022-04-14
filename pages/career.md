@@ -5,10 +5,11 @@ permalink: /career/
 weight: 3
 ---
 
-# **About Me**
+# **경력 기술서**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+안녕하세요, 개발자 **{{ site.author.name }}**입니다. :wave:,<br>
+대학교에서 데이터베이스를 전공하고 서버 개발자로 취업하여 쿼리문 작성, 서버 개발 및 구축 등의 백엔드 업무를 약 2년 정도 하고 모바일로 전향하고 싶어
+대학원을 진학하였습니다.
 
 <div class="row">
 {% include career/timeline.html %}
