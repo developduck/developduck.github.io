@@ -9,6 +9,9 @@ repository: developduck/developduck.github.io # Change to <your-username>/<your-
 # remote_theme: YoussefRaafatNasry/portfolYOU
 open_new_tab: false # Opens external URLs in new tab (works for posts, projects and navbar only)
 
+### Site Configuration ###
+host: 0.0.0.0
+
 ### Plugins ###
 plugins:
   - jemoji
