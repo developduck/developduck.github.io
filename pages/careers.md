@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Career
-permalink: /career/
+title: Careers
+permalink: /careers/
 weight: 3
 ---
 
@@ -12,5 +12,5 @@ weight: 3
 대학원을 진학하였습니다.
 
 <div class="row">
-{% include career/timeline.html %}
+{% include careers/timeline.html %}
 </div>

@@ -32,6 +32,9 @@
   projects:
     - name: 토샤
       link: 
+      skills:
+        - name: Android Native
+          link: /skills/#Android Native
   description: 
 - title: 엔달고 코리아
   from: 2018.11
