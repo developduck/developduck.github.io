@@ -7,15 +7,13 @@ weight: 3
 
 # **보유 기술**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+새로운 기술에 대한 호기심이 많고 두려움이 없으며 개념부터 습득하여 활용이 빠릅니다.<br>
+문제가 발생한 원인을 파악하고 해결하는데 있어 논리적으로 사고하는 능력이 뛰어납니다<br>
+프로그래밍을 정말 좋아하며 개발하는 프로그램에 애정을 가지고 정성을 다해 만듭니다.<br>
 
 <div class="row">
-{% include skills/skills.html title="모바일 관련 기술" source=site.data.skills-mobile-front %}
+{% include skills/skills.html title="Programming Skills" source=site.data.skills-programming %}
 </div>
 <div class="row">
-{% include skills/skills.html title="Other Skills" source=site.data.other-skills %}
-</div>
-<div class="row">
-{% include skills/skills.html title="Programming Skills" source=site.data.skills-web-front %}
+{% include skills/skills.html title="Other Skills" source=site.data.skills-other %}
 </div>
