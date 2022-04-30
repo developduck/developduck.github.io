@@ -10,7 +10,6 @@
             <p>
               {% include elements/btn-project-link.html link=project.link text=project.name %}
               {% if project.skills %}
-              <br>
                 {% for skill in project.skills %}
                   {% include elements/btn-skill-link.html link=skill.link text=skill.name %}
                 {% endfor %}
