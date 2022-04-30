@@ -1,0 +1,52 @@
+.pnl-under-construction {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .pnl-under-construction-animation {
+    margin-bottom: 50px;
+    #svg-nut {
+      display: block;
+      margin: 0 auto;
+      .str0 {
+        @include themed(stroke, $dark-900, white);
+        stroke-width:199.968;
+        stroke-linecap:round;
+        stroke-linejoin:round
+      }
+      .fil0 {
+        fill:none
+      }
+    }
+    #svg-wrench {
+      display: block;
+      margin: 0 auto;
+      .str1 {
+        @include themed(stroke, $dark-900, white);
+        stroke-width:199.963;
+        stroke-linecap:round;
+      }
+      .str0 {
+        @include themed(stroke, $dark-900, white);
+        stroke-width:199.963;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+      }
+      .fil0 {
+        fill:none
+      }
+    }
+  }
+
+  .lbl-under-construction {
+    display: block;
+    max-width: 240px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
