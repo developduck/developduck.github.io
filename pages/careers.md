@@ -5,6 +5,7 @@ permalink: /careers/
 weight: 3
 ---
 
+{% comment %}
 # **경력 기술서**
 
 안녕하세요, 개발자 **{{ site.author.name }}**입니다. :wave:,<br>
@@ -14,3 +15,5 @@ weight: 3
 <div class="row">
 {% include careers/timeline.html %}
 </div>
+{% endcomment %}
+{% include share/under-construction.html %}
