@@ -1,4 +1,4 @@
-<div class="col-lg">
+<div class="pnl-skills col-lg">
 
   <h2 class="mb-3">{{ include.title }}</h2>
 
@@ -6,29 +6,47 @@
 
   <div class="row justify-content-between align-items-center">
     <div class="col-10" id="{{ skill.name }}">
-      <p class="mb-1">{{ skill.name }}</p>
+      <p class="mb-2">{{ skill.name }}</p>
     </div>
     <div class="col-2 text-right">
-      <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
+      <p class="mb-2 text-muted">{{ skill.percentage }}</p>
     </div>
   </div>
 
   <div class="progress mb-3 bg-themed" style="height: 8px;">
-    <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
+    <div class="progress-bar bg-pastel-{{ forloop.index0 | modulo: 8 }} wow animated slideInLeft"
       data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
       role="progressbar"
-      style="width: {{ skill.percentage }}%;"
+      style="width: {{ skill.percentage }}0%;"
       aria-valuenow="{{ skill.percentage }}"
       aria-valuemin="0"
-      aria-valuemax="100">
+      aria-valuemax="10">
     </div>
   </div>
+
   {% if skill.description %}
-  <div class="mb-4">
-    {{ skill.description }}
+  <div class="pnl-desc mb-4">
+    <div class="pnl-desc-ul">
+    {% if skill.description && skill.description.ul %}
+    {% for ul_1 in skill.description.ul %}
+      <div class="pnl-desc-li">
+      {{ ul_1.li }}   
+      {% if ul_1.ul %}
+        {% for ul_2 in ul_1.ul %}
+        <div style="padding-left: 8px;">
+          {{ ul_2.li }}
+        </div>
+        {% endfor %}
+      {% endif %}
+      </div>
+    {% endfor %}
+    {% endif %}
+    </div>
   </div>
   {% endif %}
 
   {% endfor %}
 
 </div>
+
+

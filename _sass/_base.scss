@@ -10,6 +10,16 @@ body {
   font-weight: 500;
 }
 
+@mixin sel-pastel-color($index) {
+  background-color: map-get($pastels, $index);
+}
+
+@for $i from 0 to 8 {
+  .bg-pastel-#{$i} {
+    @include sel-pastel-color($i);
+  }
+}
+
 .bg-light,
 .badge-light {
   &,
