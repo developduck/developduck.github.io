@@ -1,0 +1,13 @@
+- name: Android Native
+  percentage: 90
+  color: danger
+  description:  Java, Kotlin 모두 사용 고급 수준으로 사용
+
+- name: iOS Native
+  percentage: 80
+  color:
+  description:  
+
+- name: Python
+  percentage: 70
+  color: secondary

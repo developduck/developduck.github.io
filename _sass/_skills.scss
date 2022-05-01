@@ -1,0 +1,22 @@
+.pnl-desc-ul {
+  border-left: 1px solid #CCC;
+  margin-left: 8px;
+  padding-left: 16px;
+}
+
+.pnl-desc-li {
+  position: relative
+}
+.pnl-desc-li:before {
+  content: ""; 
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  @include themed(background-color, $text-black, $text-white);
+  @include themed(border-color, white, $dark-900);
+  border: 3px solid;
+  position: absolute;
+  top: 6px;
+  left: -22px
+}

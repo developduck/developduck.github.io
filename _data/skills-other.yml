@@ -1,0 +1,6 @@
+- name: Linux
+  percentage: 8
+  color: info
+- name: Adobe Photoshop
+  percentage: 3
+  color: info

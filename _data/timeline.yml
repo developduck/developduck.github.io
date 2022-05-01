@@ -1,17 +1,94 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-- title: Software Engineer, Google, UK
-  from: 2018
+- title: 에이치비엠피
+  from: 2021.12
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  projects:
+    - name: 티샷
+      link: 
+      skills:
+        - name: Ionic
+          link: 
+        - name: Ubuntu
+          link: 
+    - name: 앵두
+      link: 
+  description: 
+- title: 유솔
+  from: 2020.03
+  to: 2021.09
+  projects:
+    - name: UUUS
+      link: 
+  description: 
+- title: 집토스
+  from: 2019.09
+  to: 2020.03
+  projects:
+    - name: 집토스
+      link: 
+  description: 
+- title: 모딧
+  from: 2019.06
+  to: 2019.08
+  projects:
+    - name: 토샤
+      link: 
+      skills:
+        - name: Android Native
+          link: /skills/#Android Native
+  description: 
+- title: 엔달고 코리아
+  from: 2018.11
+  to: 2019.05
+  projects:
+    - name: ENDALGO
+      link: 
+  description: 
+- title: 타이거컴퍼니
+  from: 2017.07
+  to: 2018.11
+  projects:
+    - name: 티그리스
+      link: 
+    - name: 다비치톡
+      link: 
+  description: 
+- title: 니디드소프트
+  from: 2016.09
+  to: 2017.06
+  projects:
+    - name: 맛댐
+      link: 
+    - name: APS
+      link: 
+    - name: 디오아시스
+      link: 
+    - name: 메모리 레코드
+      link: 
+  description: 
+- title: 가천대학교 글로벌캠퍼스대학원
+  from: 2014.09
+  to: 2016.08
+  description: 모바일소프트웨어학과에서 모바일 소프트웨어를 전공했습니다.
+- title: 시스네트
+  from: 2011.08
+  to: 2013.09
+  projects:
+    - name: 소상공인진흥원 나들가게 그린카드
+      link: 
+    - name: 소상공인진흥원 나들가게 유지보수
+      link: 
+    - name: 홈플러스 식권 발매기
+      link: 
+    - name: 하이웨이마트 POS
+      link: 
+    - name: CVSnet 점착등록
+      link: 
+  description: 
+- title: 부천대학
+  from: 2006.03
+  to: 2012.02
+  description: 전산정보처리학과에서 데이터베이스를 전공했습니다.
+- title: 신일정보산업고등학교
+  from: 2003.03
+  to: 2006.02
+  description: 컴퓨터 그래픽과에서 컴퓨터 그래픽을 전공했으며 부전공으로 C언어를 배웠습니다.
