@@ -2,9 +2,10 @@
 layout: page
 title: About
 permalink: /about/
-weight: 3
+weight: 0
 ---
 
+{% comment %}
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
@@ -18,3 +19,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="row">
 {% include about/timeline.html %}
 </div>
+{% endcomment %}
+{% include share/under-construction.html %}
