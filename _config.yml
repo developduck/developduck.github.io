@@ -27,7 +27,7 @@ nav_exclude: # The following paths are excluded from navbar
   - pages/index.md
   - pages/blog.html
   # - pages/projects.html
-  - pages/about.md
+  # - pages/about.md
 
 ### Author Info ###
 author:
