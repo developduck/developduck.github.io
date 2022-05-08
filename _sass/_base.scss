@@ -10,13 +10,19 @@ body {
   font-weight: 500;
 }
 
-@mixin sel-pastel-color($index) {
-  background-color: map-get($pastels, $index);
+@mixin sel-pastel-color($property, $index) {
+  #{$property}: map-get($pastels, $index);
 }
 
 @for $i from 0 to 8 {
   .bg-pastel-#{$i} {
-    @include sel-pastel-color($i);
+    @include sel-pastel-color(background-color, $i);
+  }
+  .text-pastel-#{$i} {
+    @include sel-pastel-color(color, $i);
+  }
+  .border-pastel-#{$i} {
+    @include sel-pastel-color(border-color, $i);
   }
 }
 
