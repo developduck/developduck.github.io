@@ -1,94 +1,308 @@
 - title: 에이치비엠피
+  subtitle: 모바일 앱, 웹, 백엔드, DB / 서비스개발실 / 과장
   from: 2021.12
   to: present
-  projects:
+  sections:
+    - description: 모바일 및 웹 프론트 개발자로 채용되었으나 서버 인력의 채용이 늦어져 API 신규 개발, 데이터베이스, 서버 관리 및 유지보수까지 전담하여 처리했습니다.
     - name: 티샷
-      link: 
+      link: /projects/5998-teeshot
+      description: 라운딩 맴버를 모집하거나 골프를 같이 즐길 수 있는 친구를 찾을 수 있게 검색, 친구 추천 및 채팅 등을 제공하는 앱입니다.
       skills:
         - name: Ionic
-          link: 
+          link: /skills/#Ionic, AngularJS
+        - name: ReactiveX
+        - name: Socket.io
+        - name: Laravel
+          link: /skills/#Laravel, PHP
+        - name: MySQL
+          link: /skills/#Relational Database
+        - name: Nginx
+        - name: Docker
+          link: /skills/#Docker
         - name: Ubuntu
-          link: 
-    - name: 앵두
-      link: 
-  description: 
+          link: /skills/#Linux
+        - name: Git
+          link: /skills/#Git
+        - name: Github Actions
+          link: /skills/#Github Actions
+
 - title: 유솔
+  subtitle: 모바일 앱, 백엔드 개발 / 개발팀 / PL
   from: 2020.03
   to: 2021.09
-  projects:
+  sections:
+    - description: 모바일 개발자로 채용되었다가 같이 채용되었던 서버 개발자분이 테스트 버전까지 완성하고 퇴사하게 되어 인수인계 받아 
+                   데이터베이스 재설계, 쿼리문 작성, 인프라 아키텍처 설계 및 구축, API 설계 및 서버 개발 업무를 진행했습니다.
     - name: UUUS
-      link: 
-  description: 
+      description: 다른 SNS 앱과 같이 사진, 동영상을 첨부하여 컨텐츠를 공유하면 사진, 동영상의 위치를 기반으로 지도에 표시해주는 SNS 형태의 앱이었습니다. 
+                   안드로이드 앱의 아이텍처를 설계하고 테스트 버전까지 개발 작업을 진행한 후에 아이폰 앱의 아키텍처를 설계하고 서버 개발을 담당하게 되었습니다.
+                   Sequelize로 자동 생성되어있던 데이터베이스가 데이터간에 관계가 복잡한 SNS 앱에는 어울리지 않아 데이터베이스를 처음부터 다시 설계했습니다. 
+                   CRUD를 위한 쿼리를 직접 작성하고 재사용성을 높이기 위해서 데이터베이스 라이브러리를 Knex로 교체했습니다.<br>
+                   인프라는 모두 AWS로 구성하였으며 관리 및 재구축의 편의를 위해 코드로 관리되도록 Terraform을 사용했습니다. 배포 파이프라인 및 인프라 아키텍처는 
+                   <span class="lnk-pointer" onclick="window.open('https://aws.amazon.com/ko/blogs/architecture/')">
+                   <u>AWS Architecture Blog</u></span>를 참조하여 설계하였습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: iOS
+          link: /skills/#iOS, Swift
+        - name: API Design
+          link: /skills/#API Design
+        - name: Express.js
+          link: /skills/#Express, Node.js
+        - name: Nginx
+        - name: AWS
+          link: /skills/#AWS
+        - name: Terraform
+          link: /skills/#Terraform
+        - name: MariaDB
+          link: /skills/#Relational Database
+        - name: Git
+          link: /skills/#Git
+        - name: Github Actions
+          link: /skills/Github Actions
+        - name: FFmpeg
+          link: /skills/#FFmpeg
+        - name: C/C++
+          link: /skills/#C/C++
+    - name: 이직 사유
+      description: 대표님이 IT 사업을 그만두시면서 이직하게 되었습니다.
+
 - title: 집토스
+  subtitle: 안드로이드 개발 / 기업부설연구소 / 연구원
   from: 2019.09
   to: 2020.03
-  projects:
+  sections:
+    - description: 안드로이드 앱을 전담하여 개발했습니다.
     - name: 집토스
-      link: 
-  description: 
+      link: https://play.google.com/store/search?q=%EC%A7%91%ED%86%A0%EC%8A%A4&hl=ko&gl=US
+      description: 기업형 부동산의 매물 검색 및 홍보를 위한 앱으로 안드로이드 앱 신규 개발 및 유지보수를 담당했습니다. 
+                   유지보수의 경우 비정상 종료율 개선, 최적화, 자바에서 코틀린으로 언어 변경, 리팩터링 작업을 했습니다.
+                   신규 개발은 매물 상세페이지, 지도 필터, 리뷰 목록 및 상세페이지 개편을 진행했습니다.
+                   그 외에도 형상관리를 위한 브랜치 전략 도입, 개발과 운영 환경의 분리 작업 등의 성과가 있습니다.
+      skills: 
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: Git
+          link: /skills/#Git
+    - name: 이직 사유
+      description: 기술 스택의 확장을 위하여 회사와 협의 후 이직하였습니다.
+
 - title: 모딧
+  subtitle: 안드로이드 개발 / 연구소 / 매니저
   from: 2019.06
   to: 2019.08
-  projects:
+  sections:
+    - description: 안드로이드 앱을 전담하여 개발했습니다.
     - name: 토샤
-      link: 
+      link: https://play.google.com/store/apps/details?id=com.intermindco.maumbot&hl=ko&gl=US
+      description: 채팅 형식에 타로점을 보는 앱으로 안드로이드 앱 신규개발을 담당했습니다. 주로 앱 테마, 디자인 및 캐릭터 애니메이션 등을 변경하고 광고 수익을 위한 AdMob을 연동했습니다.
       skills:
-        - name: Android Native
-          link: /skills/#Android Native
-  description: 
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: Lottie
+        - name: ReactiveX
+        - name: Room
+        - name: Git
+          link: /skills/#Git
+    - name: 이직 사유
+      description: 회사에 개발팀이 하나 신설된다고 하여 해당 팀의 안드로이드 개발자로 채용되었습니다. 하지만 회사 경영상의 이유로 새로운 개발팀의 신설이 무산되어 대표님과 면담 후 이직을 하게 되었습니다.
+
 - title: 엔달고 코리아
+  subtitle: 안드로이드 개발 / 개발팀 / 팀원
   from: 2018.11
   to: 2019.05
-  projects:
+  sections:
+    - description: 2인이 협업하여 안드로이드 앱을 개발했습니다.
     - name: ENDALGO
-      link: 
-  description: 
+      link: https://play.google.com/store/apps/details?id=com.endalgo.mobile&hl=ko&gl=US
+      description: 미국에서 스포츠를 위한 커뮤니티를 찾거나 직접 구성하여 운영하기 위한 앱입니다. 안드로이드 앱 신규 개발 및 유지보수를 담당했으며 분야별 2인 구성으로 Github를 이용해 협업하며 진행했습니다.
+                   비동기 방식으로 개발하기 위해서 이 시점부터 평소에 학습만하던 Reactive Programming을 본격적으로 도입하여 개발을 진행했습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: ReactiveX
+        - name: Realm
+        - name: Git
+          link: /skills/#Git
+    - name: 이직 사유
+      description: 회사의 방침으로 안드로이드 네이티브에서 React Native로 앱 개발 기반 기술이 변경되면서 CTO, 대표님과 면담을 하였습니다. 하이브리드 앱에 관심은 있었으나 아직 안드로이드 네이티브를 하고 싶다는 생각이 강하여 이직을 결정하였습니다.
+
 - title: 타이거컴퍼니
+  subtitle: 안드로이드 개발 / R&D 사업부 / 선임연구원
   from: 2017.07
   to: 2018.11
-  projects:
+  sections:
+    - description: 안드로이드 앱을 전담하여 개발했습니다.
     - name: 티그리스
-      link: 
+      link: https://play.google.com/store/apps/details?id=kr.tigercompany.tigris.cloud&hl=ko&gl=US
+      description: 사내에서 사용하는 SNS 형태의 협업 앱으로 안드로이드 앱 신규 개발 및 유지보수를 담당하였습니다. 입사 당시에 앱이 강제 종료가 자주 발생하고 
+                   앱에 성능이 안 좋아 오류 수정 및 성능개선에 많은 시간을 투자하였습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: Realm
+        - name: Jenkins
+          link: /skills/#Jenkins
+        - name: Git
+          link: /skills/#Git
+        - name: SVN
+        - name: Websocket
+        - name: Battery Historian
     - name: 다비치톡
-      link: 
-  description: 
+      link: https://play.google.com/store/apps/details?id=kr.co.davich.chat&hl=ko&gl=US
+      description: 다비치 안경에서 사용하는 사내 메신저입니다. 안드로이드 앱의 버그 수정 및 성능 개선을 했습니다.
+      skills:        
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: Git
+          link: /skills/#Git
+    - name: 이직 사유
+      description: 퇴사하는 시점에서 임금이 약 두달에서 세달정도 체불되어 생활이 어려워져 이직하게 되었습니다.
+
 - title: 니디드소프트
+  subtitle: 모바일 앱, 백엔드 개발 / 웹,앱 개발팀 / PL
   from: 2016.09
   to: 2017.06
-  projects:
-    - name: 맛댐
+  sections:
+    - description: 모바일 개발 및 데이터베이스 설계를 담당하였으며 API 서버 개발은 전담한 프로젝트도 있고 부사수와 같이 개발한 프로젝트도 있습니다.
+    - name: 맞댐
       link: 
+      description: 열대어, 수족관 용품 직거래 앱으로 안드로이드만 출시되었습니다. 안드로이드 앱 개발을 담당하였고 데이터베이스는 미리 설계되어 있어
+                   조회, 수정, 삽입, 삭제만 개발을 진행했습니다. 서버는 호스팅 업체를 사용하고 PHP로 API를 개발했습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: PHP
+        - name: MariaDB
+          link: /skills/#Relational Database
     - name: APS
-      link: 
+      description: 전당포 앱으로 안드로이드로만 출시되었습니다. 안드로이드 앱 개발을 담당하였고 데이터베이스 설계, API 서버 개발을 부사수와 진행했습니다. 
+                   서버는 호스팅 업체를 사용하고 배포를 Jenkins로 진행하였습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: API Design
+          link: /skills/#API Design
+        - name: Spring Boot
+          link: /skills/#Spring Boot, Kotlin
+        - name: MariaDB
+          link: /skills/#Relational Database
+        - name: Jenkins
+          link: /skills/#Jenkins
     - name: 디오아시스
-      link: 
+      description: 전당포 앱으로 안드로이드로만 출시되었습니다. 안드로이드 앱 개발을 담당하였고 데이터베이스 설계, API 서버 개발을 부사수와 진행했습니다. 
+                   서버는 호스팅 업체를 사용하고 배포를 Jenkins로 진행하였습니다.
+      skills:
+        - name: Android
+          link: /skills/#Android, Kotlin
+        - name: API Design
+          link: /skills/#API Design
+        - name: Spring Boot
+          link: /skills/#Spring Boot, Kotlin
+        - name: MariaDB
+          link: /skills/#Relational Database
+        - name: Jenkins
+          link: /skills/#Jenkins
     - name: 메모리 레코드
-      link: 
-  description: 
+      description: 자체 서비스를 목표로 개발하던 자기관리 앱이었으나 출시전에 회사가 폐업하게 됐습니다. iOS 개발, 데이터베이스 설계, API 서버 개발을
+                   담당하였습니다. 서버는 호스팅 업체를 사용하고 배포를 Jenkins로 진행하였습니다.
+      skills:
+        - name: iOS
+          link: /skills/#iOS, Swift
+        - name: API Design
+          link: /skills/#API Design
+        - name: Spring Boot
+          link: /skills/#Spring Boot, Kotlin
+        - name: MariaDB
+          link: /skills/#Relational Database
+        - name: Jenkins
+          link: /skills/#Jenkins
+    - name: 이직 사유
+      description: 회사가 폐업하였습니다.
+
 - title: 가천대학교 글로벌캠퍼스대학원
+  subtitle: 모바일소프트웨어학과
   from: 2014.09
   to: 2016.08
-  description: 모바일소프트웨어학과에서 모바일 소프트웨어를 전공했습니다.
+  sections:
+    - description: 모바일소프트웨어학과에서 모바일 소프트웨어를 전공했습니다.
+    - name: Don't Starve - Korean Chat Mod
+      link: https://steamcommunity.com/sharedfiles/filedetails/?id=508348231
+      description: 대학원에서 한글 형태소 분석을 공부하다가 한글 조합 알고리즘이 너무 재미있어 응용해서 게임 모드를 만들었습니다.
+                   Don't Starve 게임이 한창 인기 있을 때 10만 구독까지 도달했던 모드입니다.
+
 - title: 시스네트
+  subtitle: SW 개발 / SW사업본부 / 사원
   from: 2011.08
   to: 2013.09
-  projects:
+  sections:
+    - description: POS솔루션 회사에서 2년의 개발 경험이 있습니다. 데이터베이스, 서버, 클라이언트 구분 없이 주어지는 업무를 수행했습니다.
+    - name: 시스네트 자사 프레임워크
+      description: 시스네트에서 POS 프로그램과 관리자 페이지를 개발할 때 자사 프레임워크를 사용하고 있었는데 해당 프레임워크를 유지보수했습니다.
+      skills:
+        - name: Java
+        - name: C#
+          link: /skills/#C#
+        - name: MyBatis
+        - name: GWT
+        - name: Oracle
+          link: /skills/#Relational Database
+        - name: SQLite
+          link: /skills/#Relational Database
+    - name: 소상공인진흥원 나들가게 유지보수
+      description: 소상공인진흥원에서 소상공인들에게 POS기를 지원해 주는 사업인 나들가게 프로젝트에 투입되어 C#으로된 클라이언트를 유지보수했습니다.
+      skills:
+        - name: C#
+          link: /skills/#C#
+        - name: SQLite
+          link: /skills/#Relational Database
     - name: 소상공인진흥원 나들가게 그린카드
       link: 
-    - name: 소상공인진흥원 나들가게 유지보수
-      link: 
+      description: 그린카드 사용시에 VAN사에 요청하는 Byte 전문을 개발하고 테스트를 진행했습니다.
+      skills:
+        - name: Java
     - name: 홈플러스 식권 발매기
-      link: 
+      description: 홈플러스 직원들이 사용하는 식권 발매기를 개발했습니다. C#으로 클라이언트를 개발하고 SQLite로 로컬 데이터를 유지했습니다.
+                   클라이언트와 서버간은 HTTP API를 사용하여 통신하고 서버 데이터베이스로 Oracle을 사용하였습니다.
+      skills:
+        - name: C#
+          link: /skills/#C#
+        - name: Oracle
+          link: /skills/#Relational Database
+        - name: SQLite
+          link: /skills/#Relational Database
     - name: 하이웨이마트 POS
-      link: 
-    - name: CVSnet 점착등록
-      link: 
-  description: 
+      description: 하이웨이마트 POS를 개발하는데 서버 개발자로 투입되었습니다. WAS는 GlassFish를 사용했으며 데이터베이스와의 연결은 
+                   MyBatis 라이브러리를 이용하였습니다. 클라이언트와 서버간은 HTTP API를 사용하여 통신하였습니다.
+      skills:
+        - name: Java
+        - name: MyBatis
+        - name: GWT
+        - name: GlassFish
+        - name: Oracle
+          link: /skills/#Relational Database
+        - name: SQLite
+          link: /skills/#Relational Database
+    - name: CVSnet 점도착 등록
+      description: 편의점 택배(CVSnet)에서 점도착 등록 화면을 JSP로 개발하고 JSP에서 바로 데이터베이스(Oracle)에 접속하여 데이터를 처리했습니다.
+      skills:
+        - name: JSP
+        - name: Oracle
+          link: /skills/#Relational Database
+    - name: 이직 사유
+      description: 당시에 대전의 소상공인진흥원에 파견을 가있는 상태였는데 본가에 머물러 있어야하는 개인적인 사유로 본사로 출근하길 희망하였으나 반려되어 퇴사하게 되었습니다.
+
 - title: 부천대학
+  subtitle: 전산정보처리학과
   from: 2006.03
   to: 2012.02
-  description: 전산정보처리학과에서 데이터베이스를 전공했습니다.
+  sections: 
+    - description: 전산정보처리학과에서 데이터베이스를 전공했습니다.
+
 - title: 신일정보산업고등학교
+  subtitle: 컴퓨터그래픽과
   from: 2003.03
   to: 2006.02
-  description: 컴퓨터 그래픽과에서 컴퓨터 그래픽을 전공했으며 부전공으로 C언어를 배웠습니다.
+  sections: 
+    - description: 컴퓨터 그래픽과에서 컴퓨터 그래픽을 전공했으며 부전공으로 C언어를 배웠습니다.

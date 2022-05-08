@@ -1,0 +1,33 @@
+@mixin animate(
+  $animation, 
+  $duration, 
+  $method: linear, 
+  $repeat: 1, 
+  $fill-mode: forwards
+) {
+  animation: $animation $duration $method $repeat;
+  animation-fill-mode: $fill-mode;
+}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+      @content;
+  }
+}
+@for $i from 0 to 8 {
+  @keyframes slide-in-#{$i} {
+    from { box-shadow: inset 0em 0em map-get($pastels, $i); }
+    to { box-shadow: inset 40em 0em map-get($pastels, $i); }
+  }
+}
+@include keyframes(slide-in) {
+  from { box-shadow: inset 0em 0em gold; }
+  to { box-shadow: inset 40em 0em gold; }
+}
+@include keyframes(fade-out) {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@include keyframes(fade-in) {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
