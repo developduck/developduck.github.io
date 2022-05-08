@@ -75,6 +75,9 @@
         @include animate(slide-in-#{$i}, 0.3s);
       }
     }
+    i:hover {
+      color: $primary;
+    }
   }
 }
 
@@ -127,4 +130,8 @@
   display: inline-block;
   margin-bottom: 19px;
   padding: 4px 12px 3px 12px;
+}
+
+.lnk-pointer {
+  cursor: pointer;
 }
