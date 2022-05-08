@@ -44,3 +44,87 @@
     }
   }
 }
+
+.timeline {
+  position: relative;
+  border-radius: 0 $rounded-borders $rounded-borders 0;
+  padding: 5px 0;
+  list-style: none;
+  &:before {
+    @include themed(background-color, $dark-900, rgba(255, 255, 255, 0.7));
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 2px;
+    height: 100%;
+  }
+}
+
+@for $i from 0 to 8 {
+  .timeline-event-#{$i} {
+    position: relative;
+    &:hover {
+      .timeline-event-icon {
+        transform: rotate(0.125turn);
+        @include sel-pastel-color(background-color, $i);
+      }
+      .timeline-event-thumbnail {
+        @include themed(color, $text-white, $dark-100);
+        @include animate(slide-in-#{$i}, 0.3s);
+      }
+    }
+  }
+}
+
+.timeline-event-copy {
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 8px;
+  position: relative;
+  top: -30px;
+  left: 64px;
+  width: 80%;
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 19px;
+  }
+  strong {
+    font-weight: 700;
+  }
+  p:not(.timeline-event-thumbnail) {
+    padding-bottom: 19px;
+  }
+}
+
+@for $i from 0 to 8 {
+  .timeline-event-icon-#{$i} {
+    // @include transition(transform 0.2s ease-in);
+    transform: rotate(0.125turn);
+    @include sel-pastel-color(background-color, $i);
+    outline: 10px solid;
+    @include themed(outline-color, white, $dark-900);
+    display: block;
+    margin: 8px 8px 8px -8px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.timeline-event-thumbnail {
+  // @include transition(box-shadow 0.5s ease-in 0.1s);
+  @include themed(color, $text-white, $text-white);
+  font-size: 0.75em;
+  @include themed(background-color, $dark-900, $dark-100);
+  display: inline-block;
+  margin-bottom: 19px;
+  padding: 4px 12px 3px 12px;
+}
