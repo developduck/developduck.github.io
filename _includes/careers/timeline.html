@@ -15,7 +15,11 @@
       {% for section in item.sections %}
       <div class="mb-4">
         {% if section.name %}
-          <strong>{{ section.name }}</strong><br>
+          <strong>{{ section.name }}</strong>
+          {% if section.link %}
+          <i class="fa fa-arrow-circle-right" onclick="window.open('{{ section.link }}')"></i>
+          {% endif %}
+          <br>
         {% endif %}
         {% if section.description %}
           {{ section.description }}
