@@ -94,4 +94,5 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE
+  - backup
   - "*.log"

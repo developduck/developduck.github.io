@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  resume:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    container_name: resume.developduck.studio
+    restart: always
+    tty: true
+    volumes:
+      - .:/app
+      - ./conf:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    command: systemctl start nginx
+# bundle add webrick
+# bundle install
+# bundle exec jekyll serve
+# bundle install && bundle exec jekyll serve --watch
+# bundle exec jekyll serve --livereload
+networks:
+  my-network:
+    driver: bridge
