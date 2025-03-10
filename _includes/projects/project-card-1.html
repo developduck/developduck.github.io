@@ -1,0 +1,51 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <div class="project card text-themed">
+    {%- if external -%}
+    <a href="{{ project.external_url }}" {%- if external -%} target="_blank" {%- endif -%}>
+    {%- endif -%}
+      {%- if project_img -%}
+      <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+      {%- endif -%}
+    {%- if external -%}
+    </a>
+    {%- endif -%}
+    <div class="card-body">
+      {%- if external -%}
+      <a href="{{ project.external_url }}" {%- if external -%} target="_blank" {%- endif -%}>
+      {%- endif -%}
+        <h5 id="{{ project_id }}-name" class="card-title">
+            {%- if project_type == "remote" -%}
+            <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+            {%- endif -%}
+          {{ project_name }}
+        </h5>
+      {%- if external -%}
+      </a>
+      {%- endif -%}
+      <div class="links mb-2">
+        {%- if project.external_url -%}
+        <i class="mr-2 fas fa-globe" style="font-size: 1.0em;" onclick="window.open('{{ project.external_url }}')"></i>
+        {%- endif -%}
+        {%- if project.android_url -%}
+        <i class="mr-2 fab fa-google-play" style="font-size: 1.0em;" onclick="window.open('{{ project.android_url }}')"></i>
+        {%- endif -%}
+        {%- if project.ios_url -%}
+        <i class="mr-2 fab fa-apple" style="font-size: 1.25em;" onclick="window.open('{{ project.ios_url }}')"></i>
+        {%- endif -%}
+        {%- if project.github_url -%}
+        <i class="mr-2 fab fa-github" style="font-size: 1.05em;" onclick="window.open('{{ project.github_url }}')"></i>
+        {%- endif -%}
+      </div>
+      {%- if project_skills -%}
+      <div>
+      <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+      {%- for skill in project_skills -%}
+        <span class="text-primary badge badge-pill border border-primary mr-1">
+        {{ skill }}
+        </span>
+      {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
