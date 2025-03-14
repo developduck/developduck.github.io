@@ -111,7 +111,7 @@
     transform: rotate(0.125turn);
     @include sel-pastel-color(background-color, $i);
     outline: 10px solid;
-    @include themed(outline-color, white, $dark-900);
+    @include themed(outline-color, #f1f1f1, $dark-900);
     display: block;
     margin: 8px 8px 8px -8px;
     position: absolute;

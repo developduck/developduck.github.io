@@ -14,9 +14,9 @@
   height: 11px;
   border-radius: 50%;
   @include themed(background-color, $text-black, $text-white);
-  @include themed(border-color, white, $dark-900);
+  @include themed(border-color, #f1f1f1, $dark-900);
   border: 3px solid;
   position: absolute;
   top: 6px;
-  left: -22px
+  left: -22px;
 }

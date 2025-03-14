@@ -1,4 +1,5 @@
-
+<!-- <div class="support-grid"></div>
+<div class="band"> -->
 <div class="card-columns m-3 mt-5">
 
   <!-- Remote Projects -->
@@ -46,14 +47,12 @@
     {%- assign project_tools = project.tools -%}
 
     {%- if project.external_url -%}
-      {%- assign project_url = project.external_url -%}
       {%- assign external    = true -%}
     {%- else -%}
-      {%- assign project_url = project.url | relative_url -%}
       {%- assign external    = false -%}
     {%- endif -%}
 
-    {% include projects/project-card.html %}
+    {% include projects/project-card-1.html %}
 
   {% endfor %}
 
