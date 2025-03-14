@@ -1,12 +1,60 @@
+- title: 안전집사
+  subtitle: 풀 스택 / 개발팀 / 팀장
+  from: 2022.05
+  to: 2024.04
+  sections:
+    - description: 집을 구하는 사람이 사용하는 고객 앱(웹 포함)과 중개인이 사용하는 관리자 웹 부분으로 나뉘어 총 두 명의 개발자와 한 명의 기획/디자이너로 개발되었습니다. 
+                   팀장으로 채용되어 개발팀을 운용하고 협업 프로세스를 구축하였으며 코드의 품질 및 형상 관리를 위한 전략을 수립하고 팀원을 이끌었습니다.
+                   개발 업무에서는 데이터베이스를 설계하고 AWS를 이용해 인프라를 구축하였으며 고객이 사용하는 앱과 API, 채팅 서버 그리고 홈페이지를 담당하여 개발했습니다. 
+    - name: 안전집사
+      description: 안전집사에 근무하면서 전세사기에 대해 공부하며 알게된 사실이지만 전세 계약이 있는 이상 전세사기를 원천적으로 막는 것은 참으로 어려운 일입니다.
+                   그렇기 때문에 피해가 발생한 후에 보증금을 돌려주는 보험의 형태로 보상을 해주는데 보험이기 때문에 가입조건이 까다로울 수 밖에 없습니다.
+                   현재 나와 있는 매물들의 조건들을 검토하여 보증보험이 가능한 매물인가를 쉽게 구분할 수 있도록 해주는 앱이 바로 안전집사입니다.<br>
+                   데이터의 원자성과 무결성을 보장해야하는 정형 데이터를 위해 MySQL을 사용하고 비정형 데이터 저장을 위해 MongoDB, 인증 정보 캐싱을 위해 Redis를 사용했습니다.
+                   인프라는 AWS의 Auto Scaling과 Load Balancer를 이용해 고가용성을 보장하고 Private Subnet 분리하고 Bation Host를 통해 접근하도록 구축하였습니다.
+                   인프라에 대한 문서가 없이도 코드를 통해 내용을 파악할 수 있고 빠른 배포와 유지보수가 용이하도록 Terraform을 사용하여 코드로 관리했습니다.
+                   CI/CD는 AWS의 CodePipeline을 사용하여 구축하였으며 해당 파이프라인에 담당자만 접근할 수 있도록 권한을 부여했습니다.
+                   고객 앱은 Flutter로 개발되었으며 Android, iOS, Web 세가지 플랫폼에 배포하였고 Web의 경우 사용율이 낮아 후반에 배포 중단되었습니다.
+                   API 서버는 Spring Boot로 개발되었고 JWT 기반으로 사용자 인증을 구현하고 JPA, QueryDSL로 데이터베이스와 연결하였습니다.
+                   채팅은 Node.js의 Socket.io, 홈페이지 및 안전한 집 리포트는 Svelte로 구현되었습니다.
+      skills:
+        - name: Flutter
+          link: /skills/#Flutter, Dart
+        - name: Svelte
+        - name: Spring Boot
+          link: /skills/#Spring Boot, Kotlin
+        - name: Node.js
+          link: /skills/#Express, Node.js
+        - name: Socket.io
+        - name: AWS
+          link: /skills/#AWS, Terraform
+        - name: Azure
+        - name: Terraform
+          link: /skills/#AWS, Terraform
+        - name: Docker
+          link: /skills/#Docker
+        - name: Amazon Linux
+          link: /skills/#Linux
+        - name: Nginx
+        - name: MySQL
+          link: /skills/#Relational Database
+        - name: MongoDB
+        - name: Redis
+        - name: Git
+          link: /skills/#Git
+        - name: Github Actions
+          link: /skills/#Github Actions
+    - name: 이직 사유
+      description: 회사의 자금난으로 협의를 통해 권고사직의 형태로 퇴직하게 되었습니다.
+
 - title: 에이치비엠피
-  subtitle: 모바일 앱, 웹, 백엔드, DB / 서비스개발실 / 과장
+  subtitle: 풀 스택 / 서비스개발실 / 과장
   from: 2021.12
-  to: present
+  to: 2022.05
   sections:
     - description: 모바일 및 웹 프론트 개발자로 채용되었으나 서버 인력의 채용이 늦어져 API 신규 개발, 데이터베이스, 서버 관리 및 유지보수까지 전담하여 처리했습니다.
     - name: 티샷
-      link: /projects/5998-teeshot
-      description: 라운딩 맴버를 모집하거나 골프를 같이 즐길 수 있는 친구를 찾을 수 있게 검색, 친구 추천 및 채팅 등을 제공하는 앱입니다.
+      description: 라운딩 멤버를 모집하거나 골프를 같이 즐길 수 있는 친구를 찾을 수 있게 검색, 친구 추천 및 채팅 등을 제공하는 앱입니다.
       skills:
         - name: Ionic
           link: /skills/#Ionic, AngularJS
@@ -25,9 +73,11 @@
           link: /skills/#Git
         - name: Github Actions
           link: /skills/#Github Actions
+    - name: 이직 사유
+      description: 새로운 기술로 앱을 리모델링하기 위해 채용되었으나 개발이 무산되어 이직하게 되었습니다.
 
 - title: 유솔
-  subtitle: 모바일 앱, 백엔드 개발 / 개발팀 / PL
+  subtitle: 풀 스택 / 개발팀 / 팀장
   from: 2020.03
   to: 2021.09
   sections:
@@ -52,7 +102,7 @@
           link: /skills/#Express, Node.js
         - name: Nginx
         - name: AWS
-          link: /skills/#AWS
+          link: /skills/#AWS, Terraform
         - name: Terraform
           link: /skills/#Terraform
         - name: MariaDB
@@ -69,7 +119,7 @@
       description: 대표님이 IT 사업을 그만두시면서 이직하게 되었습니다.
 
 - title: 집토스
-  subtitle: 안드로이드 개발 / 기업부설연구소 / 연구원
+  subtitle: 안드로이드 / 기업부설연구소 / 연구원
   from: 2019.09
   to: 2020.03
   sections:
@@ -89,7 +139,7 @@
       description: 기술 스택의 확장을 위하여 회사와 협의 후 이직하였습니다.
 
 - title: 모딧
-  subtitle: 안드로이드 개발 / 연구소 / 매니저
+  subtitle: 안드로이드 / 기업부설연구소 / 매니저
   from: 2019.06
   to: 2019.08
   sections:
@@ -109,7 +159,7 @@
       description: 회사에 개발팀이 하나 신설된다고 하여 해당 팀의 안드로이드 개발자로 채용되었습니다. 하지만 회사 경영상의 이유로 새로운 개발팀의 신설이 무산되어 대표님과 면담 후 이직을 하게 되었습니다.
 
 - title: 엔달고 코리아
-  subtitle: 안드로이드 개발 / 개발팀 / 팀원
+  subtitle: 안드로이드 / 개발팀 / 팀원
   from: 2018.11
   to: 2019.05
   sections:
@@ -129,7 +179,7 @@
       description: 회사의 방침으로 안드로이드 네이티브에서 React Native로 앱 개발 기반 기술이 변경되면서 CTO, 대표님과 면담을 하였습니다. 하이브리드 앱에 관심은 있었으나 아직 안드로이드 네이티브를 하고 싶다는 생각이 강하여 이직을 결정하였습니다.
 
 - title: 타이거컴퍼니
-  subtitle: 안드로이드 개발 / R&D 사업부 / 선임연구원
+  subtitle: 안드로이드 / R&D 사업부 / 선임연구원
   from: 2017.07
   to: 2018.11
   sections:
@@ -161,7 +211,7 @@
       description: 퇴사하는 시점에서 임금이 약 두달에서 세달정도 체불되어 생활이 어려워져 이직하게 되었습니다.
 
 - title: 니디드소프트
-  subtitle: 모바일 앱, 백엔드 개발 / 웹,앱 개발팀 / PL
+  subtitle: 풀 스택 / 개발팀 / 팀장
   from: 2016.09
   to: 2017.06
   sections:
@@ -233,7 +283,7 @@
                    Don't Starve 게임이 한창 인기 있을 때 10만 구독까지 도달했던 모드입니다.
 
 - title: 시스네트
-  subtitle: SW 개발 / SW사업본부 / 사원
+  subtitle: 풀 스택 / SW사업본부 / 사원
   from: 2011.08
   to: 2013.09
   sections:
