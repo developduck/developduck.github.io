@@ -14,10 +14,22 @@
       {% for section in item.sections %}
       <div class="mb-4">
         {% if section.name %}
-          <strong>{{ section.name }}</strong>
+          <strong class="mr-1">{{ section.name }}</strong>
           {% if section.link %}
-          <i class="fa fa-arrow-circle-right" onclick="window.open('{{ section.link }}')"></i>
+          <i class="mr-2 fa fa-arrow-circle-right" onclick="window.open('{{ section.link }}')"></i>
           {% endif %}
+          {%- if section.external_url -%}
+          <i class="mr-2 fas fa-globe" style="font-size: 0.95em;" onclick="window.open('{{ section.external_url }}')"></i>
+          {%- endif -%}
+          {%- if section.android_url -%}
+          <i class="mr-2 fab fa-google-play" style="font-size: 0.95em;" onclick="window.open('{{ section.android_url }}')"></i>
+          {%- endif -%}
+          {%- if section.ios_url -%}
+          <i class="mr-2 fab fa-apple" style="font-size: 1.15em;" onclick="window.open('{{ section.ios_url }}')"></i>
+          {%- endif -%}
+          {%- if section.github_url -%}
+          <i class="mr-2 fab fa-github" style="font-size: 1.0em;" onclick="window.open('{{ section.github_url }}')"></i>
+          {%- endif -%}
           <br>
         {% endif %}
         {% if section.description %}
